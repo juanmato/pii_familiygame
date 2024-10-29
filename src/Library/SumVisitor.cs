@@ -12,8 +12,8 @@ public class SumVisitor: IVisitor
         }
     }
 
-    public void Visit(Node node)
+    public void Visit(Node<T> node)
     {
-        sum += node.Number;
+        sum += node.member;
     }
 }
